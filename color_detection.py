@@ -30,12 +30,12 @@ while True:
     upperRed = np.array([179, 255, 255])
 
 
-    greenMask = cv2.inRange(hsvImg, lowerGreen, upperGreen)
-    green = cv2.bitwise_and(flipImg, flipImg, mask=greenMask)
+    blueMask = cv2.inRange(hsvImg, lowerBlue, upperBlue)
+    blue = cv2.bitwise_and(flipImg, flipImg, mask=blueMask)
 
     cv2.imshow("img",flipImg)
-    cv2.imshow("greenMask",greenMask)
-    cv2.imshow("green",green)
+    cv2.imshow("blueMask",blueMask)
+    cv2.imshow("blue",blue)
 
     if cv2.waitKey(1) == ord("q"):
         break

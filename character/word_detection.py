@@ -4,7 +4,7 @@ import cv2
 import pytesseract as pt
 
 
-img = cv2.imread("images/1.png")
+img = cv2.imread("../images/character_1.png")
 img = cv2.resize(img,[640,480])
 img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 hImg, wImg, _ = img.shape 

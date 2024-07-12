@@ -6,6 +6,7 @@ A package is available in OpenCV that performs the following operations:
 - Obtaining HVS values from an image
 - Finding the HVS value of the area clicked with the left mouse button from the camera 
 - Performing masking by combining these two operations in the same location.
+- There are packages available for color detection in both camera feeds and images using HSV, along with masking operations.
 
 ## Character Detection with OpenCV
 Character, Word, and Number Detection on Images Using pytesseract, Also Implemented for Real-time Camera Feed

@@ -1,9 +1,14 @@
 #!/usr/bin/python3
 
 import cv2 
+import os
 import pytesseract as pt
 
-img = cv2.imread("../images/character_1.png")
+current_path = os.getcwd()
+parent_path = os.path.abspath(os.path.join(current_path, ".."))
+images_path = os.path.abspath(os.path.join(parent_path, "images"))
+
+img = cv2.imread(images_path +  "/character_1.png")
 img = cv2.resize(img,[640,480])
 img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 hImg, wImg, _ = img.shape
